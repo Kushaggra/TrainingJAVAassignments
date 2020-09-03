@@ -1,0 +1,87 @@
+.sidebar{
+    height:100%;
+    width: 180;
+    background-color:rgb(0, 0, 0);
+    position:fixed!important;
+    z-index:1;
+    overflow:auto;
+    margin-top: -10px;
+   margin-left: -10px;   
+}
+
+.bar-item{
+    text-align:center
+}
+
+.sidebutton{
+    width:100%;
+    /* white-space:normal; */
+    padding:10px 16px;
+    vertical-align:middle;
+    background-color: black;
+    cursor:pointer;
+    color: blanchedalmond;
+    border: none;
+    text-align: center;
+    font-family: "Century Gothic" ;
+    font-size: large;
+}
+
+.sidebutton:hover{
+    background-color: rgb(236, 112, 99);
+    
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+}
+    
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 145px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+  }
+  
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .fields{
+    background-color: #bbbbbb; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #a0b3a1;   
+    border-radius: 5px;
+  }
+  .fields:hover{
+    border-color: #4CAF50;
+    background-color: #57575750;
+  }
+
+  .container{
+      margin: 0%;
+      position: sticky;
+      top: 50%;
+      transform: translateY(30%);
+      box-shadow: 1px 3px 6px 2px gray;
+      
+  }
+

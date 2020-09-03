@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+    <head>
+        <title>
+            Basics of HTML
+        </title>
+       <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+   
+    <body style="align-content: center; font-family: Century Gothic;">
+          <div class="sidebar " style="width:180px">
+            <h5 class="bar-item" style="color: white; font-family: Bradley Hand ITC; font-size: 30px;">Menu</h5>
+            <button class="sidebutton w-3card" onclick="openTab(event, 'main')">Main</button><br>
+            <button class="sidebutton" onclick="openTab(event, 'table')">Table</button><br>
+            <button class="sidebutton" onclick="openTab(event, 'list')">Lists</button><br>
+            <button class="sidebutton" onclick="openTab(event, 'form')">Form</button>
+            <button class="sidebutton" onclick="openTab(event, 'extra')">Extras</button>
+          </div>
+
+
+        <a id = "name"></a>
+        <div style="margin-left:200px">
+       
+
+<div id="main" class="w3-container content">
+<center>
+    <div style="font-family: Century Gothic; font-size: 70px; vertical-align:middle;">Welcome to Basics of CSS, JS</div>
+    <img src="html5.png" height="450" width="500" alt="HTML-5">
+
+</center>
+    
+
+</div>
+
+
+  <div id="table" class="content" style="display:none">
+    <center>
+        <div style="font-family: Century Gothic; font-size: 50px;">Table</div>
+        
+   
+    <hr>
+<table border="3" height = "480" width = "500" style="box-shadow: 2px 6px 6px 1px gray;">
+<tr>
+    <td bgcolor="red"></td>
+    <td colspan="4" bgcolor="yellow"></td>
+</tr>
+<tr>
+    <td colspan="2" bgcolor="black"></td>
+    <td rowspan="3" bgcolor="red"></td>
+    <td rowspan="2" bgcolor="black"></td>
+    <td rowspan="3" bgcolor="pink"></td>
+</tr>
+<tr>
+    <td rowspan="3" colspan="2" bgcolor="blue"></td>
+</tr>
+<tr>
+    <td bgcolor="yellow"></td>
+</tr>
+<tr>
+    <td colspan="3" bgcolor="cyan"></td>
+</tr>
+<tr>
+    <td colspan="5" bgcolor="green"></td>
+</tr>
+</table>
+</center>
+  </div>
+
+  <div id="list" class="content" style="display:none">
+    <center>
+        <div style="font-family: Century Gothic; font-size: 50px;">Lists</div>
+    </center>
+
+    <hr>
+<center>
+    <h3>Here are the different types of lists</h3>
+    <br>
+
+<table border="5">
+<tr >
+    <td colspan="4" >
+        <center>
+            <h1>Ordered Lists</h1>
+        </center>
+    </td>
+<tr>
+<tr style="padding-block: 40;" >
+    <td >
+        <h3>List type="1" </h3>
+        <ol type="1" role="checkbox">
+            <li>Item -1</li>
+            <li>Item -2</li>
+            <li>Item -3</li>
+            <li>Item -4</li>
+            <li>Item -5</li>
+            <li>Item -6</li>
+            <li>Item -7</li>
+            <li>Item -8</li>
+            <li>Item -9</li>
+            <li>Item -10</li>
+        </ol>
+    </td>
+    <td>
+        <h3>List type="A" </h3>
+        <ol type="A">
+            <li>Item -1</li>
+            <li>Item -2</li>
+            <li>Item -3</li>
+            <li>Item -4</li>
+            <li>Item -5</li>
+            <li>Item -6</li>
+            <li>Item -7</li>
+            <li>Item -8</li>
+            <li>Item -9</li>
+            <li>Item -10</li>
+        </ol>
+    </td>
+    <td>
+        <h3>List type="a" </h3>
+        <ol type="a">
+            <li>Item -1</li>
+            <li>Item -2</li>
+            <li>Item -3</li>
+            <li>Item -4</li>
+            <li>Item -5</li>
+            <li>Item -6</li>
+            <li>Item -7</li>
+            <li>Item -8</li>
+            <li>Item -9</li>
+            <li>Item -10</li>
+        </ol>
+    </td>
+    <td>
+        <h3>List type="I" </h3>
+        <ol type="I">
+            <li>Item -1</li>
+            <li>Item -2</li>
+            <li>Item -3</li>
+            <li>Item -4</li>
+            <li>Item -5</li>
+            <li>Item -6</li>
+            <li>Item -7</li>
+            <li>Item -8</li>
+            <li>Item -9</li>
+            <li>Item -10</li>
+        </ol>
+    </td>
+</tr>
+<tr >
+   <td colspan="4" >
+    <center>
+        <h1>Unordered Lists</h1>
+    </center>
+    </td>
+</tr>
+<tr>
+    <td style="padding-block: 40;">
+        <h3>List type="circle" </h3>
+        <ul type="circle">
+            <li>Item -1</li>
+            <li>Item -2</li>
+            <li>Item -3</li>
+            <li>Item -4</li>
+            <li>Item -5</li>
+            <li>Item -6</li>
+            <li>Item -7</li>
+            <li>Item -8</li>
+            <li>Item -9</li>
+            <li>Item -10</li>
+        </ol>
+    </td>
+    <td>
+        <h3>List type="square" </h3>
+        <ul type="square">
+            <li>Item -1</li>
+            <li>Item -2</li>
+            <li>Item -3</li>
+            <li>Item -4</li>
+            <li>Item -5</li>
+            <li>Item -6</li>
+            <li>Item -7</li>
+            <li>Item -8</li>
+            <li>Item -9</li>
+            <li>Item -10</li>
+        </ol>
+    </td>
+    <td>
+        <h3>List type="disc" </h3>
+        <ul type="disc">
+            <li>Item -1</li>
+            <li>Item -2</li>
+            <li>Item -3</li>
+            <li>Item -4</li>
+            <li>Item -5</li>
+            <li>Item -6</li>
+            <li>Item -7</li>
+            <li>Item -8</li>
+            <li>Item -9</li>
+            <li>Item -10</li>
+        </ol>
+    </td>
+    <td>
+        <h3>List type ="dd" </h3>
+        <dl>
+            <dt>Item -1</dt>
+            <dd>Descrip -1</dd>
+            <dt>Item -3</dt>
+            <dd>Descrip -2</dd>
+            <dt>Item -5</dt>
+            <dd>Descrip -3</dd>
+            <dt>Item -7</dt>
+            <dd>Descrip -4</dd>
+            <dt>Item -9</dt>
+            <dd>Descrip -5</dd>
+        </ol>
+    </td>
+</tr>
+</table>
+</center>
+  </div>
+
+  <div id="form" class="content"  style="display:none" >
+            <center><div style="font-family: Century Gothic; font-size: 50px;">Form</div></center>
+          <hr>
+            <div class="container" style="background-color:rgba(236, 113, 99, 0.377);">
+                <center>
+                    <form style="font-family: Century Gothic; font-size: 15px;">
+                        <label for="fname">First name:</label>
+                        <input class= "fields" type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+                        <label for="lname">Last name:</label>
+                        <input class= "fields" type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+                        <label for="email">E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input class= "fields" type="email" id="email" name="email"placeholder="E-mail"><br><br>
+                        <label for="pass">Password:&nbsp;&nbsp;</label>
+                        <input class= "fields" type="password" id="pass" name="pass" placeholder="Password"><br><br>
+                        <input class= "button" type="submit" value="Submit">
+                      </form>
+                </center>
+            </div>   
+    </div>   
+
+<!-- Comments -->
+<!--  -->
+<div id="extra" class="content"  style="display:none" >
+    <center><div style="font-family: Century Gothic; font-size: 50px;">Extra</div></center>
+       <hr>
+       
+       <p><strong> <u>Paragraphs</u></strong></p>
+       <p>Random text Random text Random text Random text Random text Random text 
+           Random text Random text Random text Random text Random text</p>
+   
+           <p>Random text Random text Random text Random text Random text Random text 
+               Random text Random text Random text Random text Random text</p>
+               <p>Random text Random text Random text Random text Random text Random text 
+                   Random text Random text Random text Random text Random text</p>
+               
+    <hr>
+    <p><strong> <u>Input Types</u></strong></p>
+       Button &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <input type="button" value="Click Me"><br>
+       CheckBox
+       <input type="checkbox" value="select"><br>
+       Password &nbsp;&nbsp;
+       <input type="password" placeholder="Password"><br>
+       Radio Group&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <input type="radio"> <input type="radio">
+    <hr>
+    <center>
+    
+    <table>
+        <tr>
+            <td style="padding:20px;">
+                <center>  <p><strong> <u>iFrame</u></strong></p></center>
+                <iframe src="sample.html" title="My table page" height="450" width="400">
+                </iframe>
+            </td>
+            <td style="padding:20px;">
+              <center>  <p><strong> <u>Image</u></strong></p></center>
+                <a href = "#name"><img src = "img.jpg" alt="Flower - Alt Text"></a>
+            </td>
+        </tr>
+    </table>
+</center>
+   </div> 
+
+
+    </div>
+        <script>
+            function openTab(evt, tabName) {
+                    var i, x;
+                    x = document.getElementsByClassName("content");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    document.getElementById(tabName).style.display = "block";
+
+                    }
+
+        </script>
+        <p style="text-align: right; font-size: small;">Kushaggra Sharma 2020 </p>
+    </body>
+</html>
