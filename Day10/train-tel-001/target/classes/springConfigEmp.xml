@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- springConfigEmp.xml -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- init-method and destroy-method are CALLBACK METHODS -->
+    <bean id = "empid" class="com.manipal.train_tel_001.Employee" init-method="initialize" destroy-method="destroy">
+		<constructor-arg index="0" value="1004578" />	
+		<constructor-arg index="1" value="Kushaggra" />
+		<constructor-arg index="2" value="761234.78" />
+  <!-- here instead of "value" , we used "ref" , because index=3 is of the type "Address" which is a REFERENCED DATA TYPE -->		
+		<constructor-arg index="3" ref="address" />
+	</bean>
+
+	 <bean id = "address" class="com.manipal.train_tel_001.Address">
+		<constructor-arg index="0" value="10" />	
+		<constructor-arg index="1" value="Delhi" />
+		<constructor-arg index="2" value="110095" />
+	</bean>
+	
+</beans>

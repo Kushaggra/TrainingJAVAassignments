@@ -1,3 +1,5 @@
+Week-1 contains the projects of the first 9 days
+
 Navigation:
 
 The daily Project packages are contained in-

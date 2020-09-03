@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- springConfigEmp.xml -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- init-method and destroy-method are CALLBACK METHODS -->
+   
+   <!-- POINTS  -->
+
+	 <bean id = "point1" class="com.manipal.Shapes.Point">
+		<constructor-arg index="0" value="10" />	
+		<constructor-arg index="1" value="20" />
+	</bean>
+	 <bean id = "point2" class="com.manipal.Shapes.Point">
+		<constructor-arg index="0" value="13" />	
+		<constructor-arg index="1" value="23" />
+	</bean>
+	 <bean id = "point3" class="com.manipal.Shapes.Point">
+		<constructor-arg index="0" value="17" />	
+		<constructor-arg index="1" value="27" />
+	</bean>
+	 
+<!-- LINE -->	 
+	  <bean id = "line" class="com.manipal.Shapes.Line">
+  <!-- here instead of "value" , we used "ref" , because index=3 is of the type "Address" which is a REFERENCED DATA TYPE -->		
+		<constructor-arg index="0" ref="point1" />
+		<constructor-arg index="1" ref="point2" />
+	</bean>
+	
+<!-- TRIANGLE -->	 
+	 <bean id = "triangle" class="com.manipal.Shapes.Triangle">
+		<constructor-arg index="0" ref="point1" />
+		<constructor-arg index="1" ref="point2" />
+		<constructor-arg index="2" ref="point3" />
+	</bean>
+</beans>
