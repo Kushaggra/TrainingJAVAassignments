@@ -1,0 +1,7 @@
+Navigation:
+
+The daily Project packages are contained in-
+Week-1/Eclipse Projects/LearningProject_Tesltra/bin/com/training/
+
+The rest of the JAVA projects can be found in-
+Week-1/Eclipse Projects/
