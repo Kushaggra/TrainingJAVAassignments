@@ -1,0 +1,10 @@
+create table Athlete(
+athlete_id INT PRIMARY KEY,
+athlete_name VARCHAR(40),
+athlete_gender VARCHAR(10),
+category VARCHAR(30),
+athlete_email VARCHAR(30),
+athlete_mobile VARCHAR(10)
+);
+
+insert into athlete values(123,"Kushaggra","Male","Netball","kushaggra@gmail.com","9876543211");
