@@ -1,0 +1,5 @@
+The demo folder is a test folder...
+
+The correct day-13 assignments are contained in the folders named:
+1.Movie Management SpringBoot Application
+2.Temperature Conversion Calculator
