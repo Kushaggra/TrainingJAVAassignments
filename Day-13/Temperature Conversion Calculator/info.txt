@@ -1,0 +1,14 @@
+Spring Boot Based Temperature Conversion System Application
+
+Programmed using STS
+The application uses the following starters:
+-Spring Web
+-Spring DevTools
+
+Server Used:
+TOMCAT 9.0
+
+The application performs:
+Temperature Conversions to and from any one of the three (Celsius , Farenheit, Kelvin) to the other scale.
+
+The Application has been tested for the above functionalities, using POSTMAN.
