@@ -1,0 +1,21 @@
+Spring Boot Based Movie Management System Application
+
+Programmed using STS
+The application uses the following starters:
+-Spring Web
+-Spring DevTools
+-Spring Data JPA
+
+Server Used:
+TOMCAT 9.0
+
+The application performs:
+1. Addition of a movie to the database
+2. Find a movie record by ID
+3. Find a movie record by Title
+4. Find a movie record by Title and Lead Role
+5. Show all the movie records
+6. Update a movie record
+7. Delete a movie record
+
+The Application has been tested for the above functionalities, using POSTMAN.
