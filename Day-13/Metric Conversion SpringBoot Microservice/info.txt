@@ -1,0 +1,17 @@
+Spring Boot Based Metric Conversion Microservice
+
+Programmed using STS
+The application uses the following starters:
+-Spring Web
+-Spring DevTools
+-Spring Data JPA
+
+Server Used:
+TOMCAT 9.0
+
+The application performs:
+1. Addition of Conversion Multiples to the database
+2. get the conversion multiples for the units requested
+3.Proper Exception Handling
+
+The Application has been tested for the above functionalities, using POSTMAN.
